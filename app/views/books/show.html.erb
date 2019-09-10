@@ -1,0 +1,12 @@
+<% provide(:title, @book.title) %>
+<h1>
+
+  <%= @book.title %>
+</h1> 
+<h2>
+ <%= @book.author %>
+</h2>
+<% if @book.picture.attached? %>
+  <%= image_tag @book.picture %>
+
+<% end %>
